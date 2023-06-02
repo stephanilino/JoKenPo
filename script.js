@@ -20,7 +20,7 @@ var player2 =""
 
 playing.addEventListener("click", () => {
     reset()
-    playPC()
+    playPc()
 })
 
 function reset() {
@@ -29,7 +29,7 @@ function reset() {
     imgPc.innerHTML = ""
 }
 
-function playPC() {
+function playPc() {
     let opt = ['rock', 'paper', 'scissor']
     let num = Math.floor(Math.random() * (2 - 0 + 1)) + 0;
     player2 = opt[num]
@@ -75,14 +75,14 @@ function analyze() {
    }
 
    if (contPc >= 5){
-    loser.classlList.remove('none')
+    loser.classList.remove('none')
     loser.classList.add('center')
    }
 
    setTimeout(() => {
     playing.disabled = false
     clear();
-   },2000)
+   },1000)
 }
 
 function clear () {
@@ -90,7 +90,7 @@ function clear () {
     imgUser.innerHTML =""
 }
 
-function newGame(){
+function newGame() {
     contador.innerHTML = "0:0"
     contPc = 0
     contUser = 0
