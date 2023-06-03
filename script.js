@@ -47,15 +47,15 @@ function analyze() {
     -1 = DERROTA
     */
 
-   if (player1 == player2) {
+    if (player1 == player2) {
 
-   } else if (player1 == "rock") {
-    win = player1 == "scissor" ? 1 : -1
-   } else if (player1 == "paper") {
-    win = player2 == "rock" ? 1 : -1
-   } else if (player1  == "scissor") {
-    win = player2 == "paper" ? 1 : -1
-   }
+    } else if (player1 == "rock") {
+        win = player2 == 'scissor' ? 1 : -1
+    } else if (player1 == 'paper') {
+        win = player2 == 'rock' ? 1 : -1
+    } else if (player1 == 'scissor') {
+        win = player2 == 'paper' ? 1 : -1
+    }
 
    if(win == 0){
 
